@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-run.py
+ui.py
 
 Created by adroit on 2010-08-02.
 Copyright (c) 2010 __MyCompanyName__. All rights reserved.
@@ -9,7 +9,6 @@ Copyright (c) 2010 __MyCompanyName__. All rights reserved.
 
 import sys
 import getopt
-import mechanize
 
 
 help_message = '''
@@ -23,7 +22,6 @@ class Usage(Exception):
 
 
 def main(argv=None):
-    print 'hi'
     if argv is None:
         argv = sys.argv
     try:
