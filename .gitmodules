@@ -1,0 +1,3 @@
+[submodule "3p/mechanize"]
+	path = 3p/mechanize
+	url = http://github.com/jjlee/mechanize.git
