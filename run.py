@@ -3,13 +3,12 @@
 """
 run.py
 
-Created by adroit on 2010-08-02.
-Copyright (c) 2010 __MyCompanyName__. All rights reserved.
+Created by dorkitude on 2010-08-02.
 """
 
 import sys
 import getopt
-import mechanize
+from rest_test.Ui import *
 
 
 help_message = '''
@@ -23,7 +22,6 @@ class Usage(Exception):
 
 
 def main(argv=None):
-    print 'hi'
     if argv is None:
         argv = sys.argv
     try:
@@ -45,6 +43,8 @@ def main(argv=None):
         print >> sys.stderr, sys.argv[0].split("/")[-1] + ": " + str(err.msg)
         print >> sys.stderr, "\t for help use --help"
         return 2
+     
+    Ui().execute()
 
 
 if __name__ == "__main__":
