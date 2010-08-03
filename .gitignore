@@ -1,6 +1,6 @@
 *.pyc
 *.DS_Store
 .DS_Store
-/flat_files/*
+flat_files/*
 debug.log
-/rest_test/test_setup.py
+rest_test/test_setup.py
