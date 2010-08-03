@@ -73,14 +73,14 @@ class Tester(Exception):
         logging.debug('name=%s and url=%s' % (pretty_name, url))
         timedelta = (finish - start)
         response_ms = timedelta.microseconds/1000
-        output('server responded in ' + str(response_ms) + ' ms')
+        output('server responded in ' + str(response_ms) + ' ms\n')
 
         # logging.debug(response.get_data())
         response_json= response.get_data()
         response_dict = json.loads(response_json)
     
-    def output(self, message, newline=False):
-        if newline:
-            print(message)
-        else:
-            sys.stdout.write(message)
+def output(message, newline=False):
+    if newline:
+        print(message)
+    else:
+        sys.stdout.write(message)
