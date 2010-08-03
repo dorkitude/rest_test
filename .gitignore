@@ -3,3 +3,4 @@
 .DS_Store
 /flat_files/*
 debug.log
+/rest_test/test_setup.py
