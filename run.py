@@ -8,7 +8,9 @@ Created by dorkitude on 2010-08-02.
 
 import sys
 import getopt
-from rest_test.Ui import *
+from rest_test.Tester import *
+import logging
+import json
 
 
 help_message = '''
@@ -43,9 +45,10 @@ def main(argv=None):
         print >> sys.stderr, sys.argv[0].split("/")[-1] + ": " + str(err.msg)
         print >> sys.stderr, "\t for help use --help"
         return 2
-     
-    Ui().execute()
-
+    
+    # do stuff!!! 
+    logging.debug("\n\n\n\n")
+    Tester().execute()
 
 if __name__ == "__main__":
     sys.exit(main())
