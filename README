@@ -4,6 +4,7 @@ Define your API and test cases in rest_test/test_setup.py
 
 Currently only supports JSON responses.
 Currently only supports one-deep REST resources of the "collection" type.
+Currently does *not* support 'comparator' assertions -- only 'type' assertions work right now.
 
 
 I'll be adding nesting and the "member" type as soon as I have need in my own projects :)
