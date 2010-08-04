@@ -1,4 +1,11 @@
-testing readme file
+Hey!  This should be pretty easy to use.
+
+Define your API and test cases in rest_test/test_setup.py
+
+Currently only supports JSON responses.
+Currently only supports one-deep REST resources of the "collection" type.
 
 
-does this work?
+I'll be adding nesting and the "member" type as soon as I have need in my own projects :)
+
+
