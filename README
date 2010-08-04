@@ -1,6 +1,8 @@
 Hey!  This should be pretty easy to use.
 
-Define your API and test cases in rest_test/test_setup.py
+-Define your API and test cases in rest_test/test_setup.py
+-Then use 'python run.py' to see the results!
+
 
 Currently only supports JSON responses.
 Currently only supports one-deep REST resources of the "collection" type.
