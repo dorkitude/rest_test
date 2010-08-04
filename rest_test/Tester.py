@@ -32,7 +32,7 @@ class TestCaseTypeException(TestCaseException):
             msg = 'no custom failure message specified'
         self.msg = "%s Field 'response.%s' failed TYPE test: %s" % (condition['pretty_resource_name'], condition['response_field'], msg)
 
-class TestCaseComparitorException(TestCaseException):
+class TestCaseComparatorException(TestCaseException):
     def __init__(self, condition, msg=''):
         if msg == '':
             msg = 'no custom failure message specified'
